@@ -1,0 +1,64 @@
+:root {
+  --primary-zatone-color: #495e57;
+  --primary-yellow-color: #f4ce14;
+  --secondary-tomato-color: #ee9972;
+  --secondary-peeg-color: #fbdabb;
+  --hightlight-light-color: #edefee;
+  --hightlight-dark-color: #333333;
+
+  --transition: 180ms ease-in-out;
+
+  --font-in-pt: 1.333px;
+}
+
+#hero {
+  background-color: var(--hightlight-light-color);
+  padding: 3rem 0;
+}
+
+#hero .container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+#hero .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#hero .content .header h1,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+#hero .content p {
+  margin: 1.6rem 0;
+  max-width: 500px;
+}
+
+#hero .content > button {
+  align-self: flex-start;
+  justify-self: flex-end;
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #hero .container {
+    grid-template-columns: repeat(8, 1fr);
+    place-items: center;
+  }
+
+  #hero figure {
+    grid-column: 5 / span 4;
+    grid-row: 1 / -1;
+    max-width: 400px;
+  }
+
+  #hero .content {
+    grid-column: 1 / span 4;
+    grid-row: 1 / -1;
+  }
+}

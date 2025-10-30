@@ -1,0 +1,46 @@
+footer {
+  background-color: var(--hightlight-light-color);
+}
+
+.footer {
+  display: grid;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.footer > figure {
+  display: none;
+}
+
+.footer ul h4 {
+  color: var(--primary-zatone-color);
+  margin-bottom: 0.7rem;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.footer ul a {
+  color: var(--hightlight-dark-color);
+  transition: color var(--transition);
+}
+
+.footer ul a:hover {
+  color: var(--primary-yellow-color);
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .footer ul {
+    grid-column: span 2;
+  }
+  .footer figure {
+    display: block;
+  }
+}

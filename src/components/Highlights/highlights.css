@@ -1,0 +1,15 @@
+#highlights {
+  padding: 3rem 0;
+}
+.highlights__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+#highlights .grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
