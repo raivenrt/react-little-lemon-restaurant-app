@@ -5,6 +5,7 @@ import bruchettaSvg from "../../assets/bruchetta.svg";
 import lemonDessert from "../../assets/lemon dessert.jpg";
 
 import "./highlights.css";
+import GridLayout from "../GridLayout/GridLayout";
 
 const Highlights = () => {
   return (
@@ -14,7 +15,7 @@ const Highlights = () => {
           <h2 className="subtitle">Specials</h2>
           <button className="btn rounded">Online Menu</button>
         </header>
-        <section className="grid-layout">
+        <GridLayout>
           <HighlightCard
             title="Greek salad"
             imgSrc={greekSaladJpg}
@@ -38,7 +39,7 @@ const Highlights = () => {
             description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus dicta laborum enim officia eaque
           voluptate! Praesentium, molestiae similique minima esse ipsam nam."
           />
-        </section>
+        </GridLayout>
       </section>
     </section>
   );

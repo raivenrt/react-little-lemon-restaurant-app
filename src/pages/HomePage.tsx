@@ -1,15 +1,15 @@
 import Hero from "../components/Hero/Hero";
 import Highlights from "../components/Highlights/Highlights";
 
-const Main = () => {
+const HomePage = () => {
   return (
     <>
       <Hero />
       <Highlights />
-      <section id="testimonials">Testimonials Section</section>
+      <section id="testimonials">testimonials</section>
       <section id="about">About Section</section>
     </>
   );
 };
 
-export default Main;
+export default HomePage;
