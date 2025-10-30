@@ -7,6 +7,24 @@ import lemonDessert from "../../assets/lemon dessert.jpg";
 import "./highlights.css";
 import GridLayout from "../GridLayout/GridLayout";
 
+const DATA = [
+  {
+    title: "Greek Salad",
+    imgSrc: greekSaladJpg,
+    price: 12.99,
+  },
+  {
+    title: "Bruchetta",
+    imgSrc: bruchettaSvg,
+    price: 5.99,
+  },
+  {
+    title: "Lemon Dessert",
+    imgSrc: lemonDessert,
+    price: 5.0,
+  },
+];
+
 const Highlights = () => {
   return (
     <section id="highlights">
@@ -16,29 +34,13 @@ const Highlights = () => {
           <button className="btn rounded">Online Menu</button>
         </header>
         <GridLayout>
-          <HighlightCard
-            title="Greek salad"
-            imgSrc={greekSaladJpg}
-            price={12.99}
-            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus dicta laborum enim officia eaque
+          {DATA.map((highlight) => (
+            <HighlightCard
+              {...highlight}
+              description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus dicta laborum enim officia eaque
           voluptate! Praesentium, molestiae similique minima esse ipsam nam."
-          />
-
-          <HighlightCard
-            title="Bruchetta"
-            imgSrc={bruchettaSvg}
-            price={5.99}
-            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus dicta laborum enim officia eaque
-          voluptate! Praesentium, molestiae similique minima esse ipsam nam."
-          />
-
-          <HighlightCard
-            title="Lemon Dessert"
-            imgSrc={lemonDessert}
-            price={5.0}
-            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus dicta laborum enim officia eaque
-          voluptate! Praesentium, molestiae similique minima esse ipsam nam."
-          />
+            />
+          ))}
         </GridLayout>
       </section>
     </section>

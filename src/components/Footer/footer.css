@@ -3,13 +3,18 @@ footer {
 }
 
 .footer {
-  display: grid;
-  gap: 2rem;
   padding: 3rem 0;
+  display: flex;
+  gap: 2rem;
 }
 
-.footer > figure {
+.info {
+  flex-grow: 1;
+}
+
+.footer figure {
   display: none;
+  max-width: 200px;
 }
 
 .footer ul h4 {
@@ -34,12 +39,6 @@ footer {
 
 /*  Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .footer {
-    grid-template-columns: repeat(8, 1fr);
-  }
-  .footer ul {
-    grid-column: span 2;
-  }
   .footer figure {
     display: block;
   }
