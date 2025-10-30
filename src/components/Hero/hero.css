@@ -1,16 +1,3 @@
-:root {
-  --primary-zatone-color: #495e57;
-  --primary-yellow-color: #f4ce14;
-  --secondary-tomato-color: #ee9972;
-  --secondary-peeg-color: #fbdabb;
-  --hightlight-light-color: #edefee;
-  --hightlight-dark-color: #333333;
-
-  --transition: 180ms ease-in-out;
-
-  --font-in-pt: 1.333px;
-}
-
 #hero {
   background-color: var(--hightlight-light-color);
   padding: 3rem 0;
